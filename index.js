@@ -24,13 +24,14 @@ const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
 
 strings.map((d, i) => {
-  let seed = Math.round(Math.random()) + Math.random();
+  let seed = Math.random();
   let textelement = document.createTextNode(d);
 
   let hElement = document.createElement("h1");
   hElement.classList.add("word");
   hElement.appendChild(textelement);
-  hElement.style.webkitFilter = "blur(" + seed * 1.5 + "px)";
+  hElement.style.webkitFilter = "blur(" + (seed+0.6) * 2 + "px)";
+  hElement.style.fontSize = (1-seed)*12 + 12 + 'px';
 
   let textcontainer = document.createElement("div");
   textcontainer.classList.add("inside");
@@ -51,6 +52,7 @@ strings.map((d, i) => {
 //Tweens
 //TweenMax.from(".inside", 1, { y: 100 });
 TweenMax.staggerFrom(".inside", 1, { y: 50, opacity: 0 }, 0.2);
+TweenMax.staggerTo(".inside", 40, { y: -100 }, 0.2);
 
 var scene = document.getElementById("scene");
 var parallaxInstance = new Parallax(scene, {
