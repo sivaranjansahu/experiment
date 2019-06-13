@@ -1,97 +1,86 @@
-.inside{
-    position: absolute;
+.inside {
+  position: absolute;
 }
 
 .speech-bubble {
-	position: relative;
-	background: rgba(255,255,255,0.3);
-	border-radius: .4em;
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0.4em;
 }
 
 .speech-bubble:after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 66px solid transparent;
-	border-top-color: rgba(255,255,255,0.3);
-	border-bottom: 0;
-	border-left: 0;
-	margin-left: -33px;
-	margin-bottom: -66px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 66px solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -33px;
+  margin-bottom: -66px;
 }
 
 
-
-
-
-
-.word{
-    color:#fff;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-h1.hero{
-    font-size:12rem;
-    font-weight:100;
-    z-index: 5;
-    //text-transform: uppercase;
-    color: #fff;
-    font-family: Roboto
-}
-.container{
-    height: 800px;
-    width:100vw;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.scene{
-    background-color:#222;
-    width:100%;
-    border: 1px solid #ccc;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0 auto;
-  }
-  .scene>div:first-child{
-    position: absolute;
-    display:inline-block;
-    background-color: yellow;
-    right:0;
-    bottom:10px;
-    
-  }
+h1.hero {
+  font-size: 8rem;
+  font-weight: 100;
+  opacity: 1;
+  z-index: 5;
+  color: rgba(0,0,0,0.6);
   
-  
-  h1.word{
-    letter-spacing: 1px;
-    font-size: 2vw;
-    font-weight: 200;
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    background-size: 120% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    -ms-background-clip: text;
-    -ms-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    background-image: linear-gradient(45deg, 
-                      #7794ff, 
-                      #44107A,
-                      #FF1361,
-                      #FFF800);
-    
-    )
-  }
+}
+.container {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.scene {
+  background-color: rgba(230,230,230,1);
+  /* height: 100vw; */
+  border: 1px solid #ccc;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene > div:first-child {
+  position: absolute;
+  display: inline-block;
+  background-color: yellow;
+  right: 0;
+  bottom: 10px;
+}
+
+h1.word {
+  letter-spacing: 1px;
+  font-size: 8rem;
+  text-decoration: none;
+  font-weight: 100;
+  color: white;
+  display: inline-block;
+  background-size: 120% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #7794ff, #44107a, #ff1361, #fff800);
+  /* background-image: linear-gradient(45deg, #005c97, #363795); */
+}
