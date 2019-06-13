@@ -34,14 +34,16 @@
 }
 
 h1.hero{
-    font-size:96px;
-    font-weight:900;
+    font-size:12rem;
+    font-weight:100;
     z-index: 5;
+    //text-transform: uppercase;
     color: #fff;
+    font-family: Roboto
 }
 .container{
     height: 800px;
-    width:1200px;
+    width:100vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -49,15 +51,14 @@ h1.hero{
 }
 
 div.scene{
-    background-color:#D9A404;
-    height:100vw;
+    background-color:#222;
+    width:100%;
     border: 1px solid #ccc;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: absolute;
     left: 0;
     top: 0;
-    width:100%;
     margin: 0 auto;
   }
   .scene>div:first-child{
@@ -91,9 +92,6 @@ div.scene{
                       #44107A,
                       #FF1361,
                       #FFF800);
-    background-image: linear-gradient(
-        45deg,
-        #005C97,
-        #363795
+    
     )
   }
