@@ -1,0 +1,14 @@
+.section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .content{
+      background-color: aquamarine;
+      flex: 1;
+      align-self: stretch;
+      padding: 1rem;
+  }
